@@ -237,6 +237,39 @@ body {
     padding: 20px;
 }
 
-.footer .logo {
+.footer {
     text-align: center;
 }
+
+.logo {
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: justify;
+}
+
+
+.logo-image {
+    vertical-align: middle;
+    max-width: 200px; 
+    max-height: 100px;
+}
+
+#logo-container {
+	text-align: justify;
+}
+#logo-container > div {
+	width: 200px; /* Declare your value. Can be in relative units. */
+	display: inline-block;
+	vertical-align: middle;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+}
+#logo-container:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+
