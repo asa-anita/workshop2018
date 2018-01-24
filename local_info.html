@@ -28,6 +28,7 @@
 	var broadie = {lat: -31.9968107,lng: 115.8925183};
 	var cira = {lat: -31.9945778, lng: 115.8885769};
         var gingin = {lat: -31.3566909,lng: 115.711308};
+        var dinner = {lat:-32.011588,lng:115.8842603};
         var zoomlevel=15
         var curtinmap = new google.maps.Map(document.getElementById('curtin'), {
             zoom: zoomlevel,
@@ -53,6 +54,14 @@
             position: gingin,
             map: ginginmap
         });
+        var dinnermap = new google.maps.Map(document.getElementById('dinner'), {
+            zoom: zoomlevel,
+            center: dinner
+        });
+        var dinnermarker = new google.maps.Marker({
+            position: dinner,
+            map: dinnernmap
+        });
     }
     </script>
 
@@ -73,7 +82,7 @@
                 </div>
                 <div class="iframe-container">
 		  <h2 style="text-align: center;">Venue</h2>
-		  <font size="+1">
+		  <!--<font size="+1">-->
 		  <p style="text-align: left;">
 		  The meeting will take place at <a href="http://www.icrar.org">ICRAR</a>, <a href="http://www.uwa.edu.au">University of Western Australia</a> (Mon-Wed) and <a href="http://www.curtin.edu.au">Curtin University</a> (Thurs-Fri).
 		  There will be a day trip to the <a href="http://gravitycentre.com.au/">Gravity Discovery Center</a> in Gingin (Wed). 
@@ -117,9 +126,24 @@
 		  <br/>
 
 		  <h2 style="text-align: center;">Workshop dinner</h2>
-		  TBD.
+		  <p style="text-align: left;">
+		  The workshop dinner is at the <a href="http://www.varsitybar.com.au">Varsity Bar</a>, which is in walking distance of Curtin University. This dinner is not covered by the conference and individuals are expected to pay for their own food/drinks. Dinner will be from 18:00-20:30.
+		  </p>
+            <div class="row">
+                <div class="col-md-4" > 
+                <h4>Varsity Bar</h4>
+                55/230 Manning Rd<br/>
+                Karawara WA 6152
+            </div>
+            <div class="row">
+                </div>
+                <div class="col-md-4" > 
+                <div id = "dinner" style = "width:350px; height:350px;"></div>
+                </div>
+            </div>
 		  <br/>
 		  <br/>
+
 		  <h2 style="text-align: center;">Local transport</h2>
           <p style="text-align: left;">
           Perth has several modes of public transport, from buses to trains. These can be paid by cash or a 
@@ -144,6 +168,12 @@
 		    <div class="col-md-12" style="text-align: left;">
     		Near the CBD<br/><br/>
 		    <div class="col-md-4" style="text-align: left;">
+        		<a href="http://www.ibis.com/gb/hotel-1773-ibis-perth/index.shtml"/>Ibis Hotel</a> 
+        		<br/>
+        		334 Murray Street, Perth 6000
+	        	<br/>
+	        	<a href="mailto:H1773@accor.com">H1773@accor.com</a><br/>
+	        	<a href="tel:+618 93222844">+618 9322 2844</a>
 		    </div>
 		    </div>
 		</div>
@@ -172,11 +202,8 @@
 <br>
 <br>
 
-<h2 style="text-align: center;">Getting Around</h2>
-	      
-	      <h2 style="text-align: center;">Local attractions</h2>
-            <br/>
-            More information can be found at <a href="http://www.westernaustralia.com/">WA tourism</a>.  September.
+        <h2 style="text-align: center;">Local attractions</h2>
+        More information can be found at <a href="http://www.westernaustralia.com/">WA tourism</a>.  September.
 
 		  
                 </div>
